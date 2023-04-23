@@ -1,0 +1,105 @@
+<html>
+     <head>
+            <title> Barber Shop Website Design</title>
+            <link rel="stylesheet" href="netflix.css">
+            <meta name="viewport" content="width =device-width, initial-scale=1">
+            <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+            <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=M+PLUS+2:wght@300&display=swap" rel="stylesheet">
+        </head>
+<body>
+    <section id="banner">
+        
+        <div class="banner-text">
+            <img src="images/nfx.png">
+            <p>Watch Your Favourite Movies & TV Shows </p>
+            <div class="search-bar">
+               <input type="text" placeholder="Search Movies, Tv Shows">
+            </div>
+        </div>
+    </section>
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href='#banner'>HOME</a>
+            <li><a href='#tvShow'>TV SHOWS</a>
+            <li><a href='#movies'>MOVIES</a>
+            <li><a href='#myList'>WATCHLIST</a>    
+            <!-- <li><a href='#'>MEET US</a> -->
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="images/menu.png" id="menu">
+</div> 
+ <!-- TV SHOWS -->
+<section id="tvShow">
+    <div class="t-shows">
+        <a href="#"><h1>Tv Shows</h1></a>
+        <p>And More</p>
+    </div>
+    <div class="show-list ">
+        <ul>
+            <li><a href='personalPage.html'><img src="images/wp1839578.jpg"></a><h2>Stranger Things</h2><p> 8 Episodes . 2016 . Genre: Science fiction, horror</p></li>
+            <li><a href='dark.html'><img src="images/dark.jpg"></a><h2>Dark</h2><p> 10 Episodes . 2017 . Genre : Science fiction, Drama, Thriller</p></li>
+            <li><a href='mandlorion.html'><img src="images/mando.jpg"></a><h2>The Mandlorian</h2><p> 8 Episodes . 2019 . Genre: Adventure fiction, Drama</p></li>
+            <li><a href='friends.html'><img src="images/friends.jfif"></a><h2>Friends</h2><p> 24 Episodes . 1994 . Genre: Comedy, Sitcom, Romance</p></li>
+            <li><a href='moneyhiest.html'><img src="images/money1.jfif"></a><h2>Money Heist</h2><p> 15 Episodes . 2017 . Genre: Crime drama, Heist, Suspense</p></li>
+        </ul>
+        
+    </div>
+</section>
+<!-- TV SHOWS end-->
+
+<!-- Movies -->
+<section id="movies">
+    <div class="m-shows">
+        <a href="#"><h1>Movies</h1></a>
+        <p>And More</p>
+    </div>
+    <div class="show-list1 ">
+        <ul>
+            <li><a href='interstellar.html'><img src="images/interstellar.jpg"></a><h2>Interstellar</h2><p> 2hr 49min . 2014 . Genre: Science fiction, Adventure</p></li>
+            <li><a href='harrypotter.html'><img src="images/harry potter.jpg"></a><h2>Harry Potter</h2><p> 2hr 10min . 2011 . Genre: Fantasy, Mystery, Thriller</p></li>
+            <li><a href='poc.html'><img src="images/poc.jpg"></a><h2>Pirates of the Carribean</h2><p> 2hr 17min . 2011 . Genre: Adventure , Action</p></li>
+            <li><a href='blacpanther.html'><img src="images/blackpanther2.jpg"></a><h2>Black Panther</h2><p> 2hr 14min . 2018 . Genre: Adventure , Action, Sci-fi</p></li>
+            <li><a href='dune.html'><img src="images/dune2.jpg"></a><h2>Dune</h2><p> 2hr 35min . 2021 . Genre: Science fiction, Adventure</p></li>
+        </ul>
+        
+    </div>
+</section>
+<!-- Movies end -->
+
+<!-- watchlist -->
+<section id="myList">
+    <div class="m-list">
+        <a href="#"><h1>Watch List</h1></a>
+    </div>
+    <div class="nothing">
+        <h1> Keep track of Movies, Tv shows and clips you want to watch</h1>
+       <p>Currently your Watchlist is empty <a href="#"><span></span></a></p> 
+    </div>
+
+<!-- watchlist end -->
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav= document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right="-250px";
+
+        menuBtn.onclick = function(){
+            if(sideNav.style.right=="-250px"){
+                sideNav.style.right="0";
+                menu.src ="images/close.png";
+            }
+            else{
+                sideNav.style.right="-250px";
+                menu.src ="images/menu.png";
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+</html>
